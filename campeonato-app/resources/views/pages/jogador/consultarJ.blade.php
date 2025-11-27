@@ -31,7 +31,7 @@
                         <td scope="row">{{$id->posicao}}</td>
                         <td scope="row">{{$id->numero}}</td>
                         <td scope="row">{{$id->idade}}</td>
-                        <td scope="row">{{$id->time}}</td>
+                        <td scope="row">{{$id->timeNome}}</td>
                         <td class="text-end">
                             <a class="btn btn-outline-secondary btn-sm me-1" href="/editarJ/{{$id->id}}"><i class="bi bi-pencil-fill"></i></a>
                         </td>

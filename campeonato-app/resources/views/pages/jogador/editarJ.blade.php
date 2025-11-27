@@ -39,7 +39,7 @@
  
             <div class="d-flex align-items-center justify-content-between mb-3">
                 <div class="row">
-                    <div class="col">
+                    <div class="col" style="margin-top:20px;">
                         <button type="submit" class="btn btn-success"><i class="bi bi-check-all me-1"></i> Atualizar</button>
                         <a class="btn btn-secondary" href="/consultarPaginaInicialJ"><i class="bi bi-arrow-left-short me-1"></i> Voltar</a>
  

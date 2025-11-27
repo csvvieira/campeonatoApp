@@ -1,6 +1,6 @@
 <x-layout titulo="Página Time">
     @csrf
-    <div class="card p-4">
+    <div class="card p-4" >
         <div class="d-flex align-items-center justify-content-between mb-3">
             <div>
                 <h6 class="mb-0">Gerenciar Time</h6>

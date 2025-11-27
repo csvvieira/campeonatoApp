@@ -19,7 +19,7 @@
             <div class="d-flex justify-content-center align-items-center">
                 <img src="../images/logotipo.png" width="70px" alt="Logotipo do Campeonato entre Amigos">
                 <div>
-                    <h5 style="margin-left: 20px;">Campeonato Entre Amigos</h5>
+                    <h5 style="margin-left: 20px;color:white; margin-bottom:0px;">Campeonato Entre Amigos</h5>
                 </div>
             </div>
 
@@ -43,8 +43,8 @@
             </div>
         </div>
     </header>
-    <main class="d-flex justify-content-center align-items-center">
-        <div>
+    <main>
+        <diV>
             {{$slot}}
         </div>
     </main>

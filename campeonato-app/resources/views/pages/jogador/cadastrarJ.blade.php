@@ -1,5 +1,5 @@
 <x-layout titulo="Cadastrar Jogador">
-    <form class="container" action="cadastrarJ/salvarJ" method="GET">
+    <form class="container" style="margin-top: 200px;" action="cadastrarJ/salvarJ" method="GET">
         @csrf
         <div class="card p-4">
             <h6>Cadastrar Jogador</h6>
@@ -35,7 +35,7 @@
                 </div>
             </div>
  
-            <div class="col">
+            <div class="col" style="margin-top:20px;">
                 <button type="submit" class="btn btn-success"><i class="bi bi-check-all me-1"></i> Cadastrar</button>
  
                 <a class="btn btn-secondary" type="button" href="/consultarPaginaInicialJ"><i class="bi bi-arrow-left-short me-1"></i> Voltar</a>

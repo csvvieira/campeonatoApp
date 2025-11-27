@@ -23,7 +23,7 @@
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col" style="margin-top:20px;">
                 <button type="submit" class="btn btn-success"><i class="bi bi-check-all me-1"></i> Cadastrar</button>
 
                 <a class="btn btn-secondary" type="button" href="/consultarPaginaInicialC"><i class="bi bi-arrow-left-short me-1"></i> Voltar</a>
