@@ -8,11 +8,12 @@ use Illuminate\Http\Request;
 class jogadorController extends Controller
 {
     public function paginaInicial(){
-        return view('pages.CadastrarJ');
+        $ids = jogadorModel::all();
+        return view('pages.jogador.consultarJ', compact('ids'));
     }//Fim da pagina inicial
 
     public function cad(){
-        return view('pages.cadastrarJ');
+        return view('pages.jogador.cadastrarJ');
     }//Fim do método para direcionar á página cadastrar jogador
 
     public function inserir(Request $request){
@@ -36,12 +37,12 @@ class jogadorController extends Controller
 
     public function consultar(){
         $ids = jogadorModel::all();
-        return view('pages.consultarJ', compact('ids'));
+        return view('pages.jogador.consultarJ', compact('ids'));
     }//Fim do Consultar
 
     public function editar($id){
         $dado = jogadorModel::findOrFail($id);
-        return view('pages.editarJ', compact('dado'));
+        return view('pages.jogador.editarJ', compact('dado'));
     }//Fim do editar
 
     public function atualizar(Request $request, $id){
@@ -54,8 +55,8 @@ class jogadorController extends Controller
         return redirect('/consultarPaginaInicialJ');
     }//Fim do excluir
 
-    public function consultarPaginaInicialJ(Request $request, $id){
+    public function consultarPaginaInicialJ(){
         $ids = jogadorModel::all();
-        return view('/consultarPaginaInicialJ', compact('ids'));
+        return view('pages.jogador.consultarJ', compact('ids'));
     }//Fim do método
 }//Fim da classe Model

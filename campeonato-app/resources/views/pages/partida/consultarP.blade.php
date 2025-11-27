@@ -37,7 +37,7 @@
                         <td scope="row">{{$id->campeonatoNome}}</td>
                         <td scope="row">{{$id->arbitroNome}}</td>
                         <td class="text-end">
-                            <a class="btn btn-outline-secondary btn-sm me-1" href="/editarJ/{{$id->id}}"><i class="bi bi-pencil-fill"></i></a>
+                            <a class="btn btn-outline-secondary btn-sm me-1" href="/editarP/{{$id->id}}"><i class="bi bi-pencil-fill"></i></a>
                         </td>
                     </tr>
                     @endforeach

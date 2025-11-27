@@ -1,5 +1,5 @@
 <x-layout titulo="Editar Partida">
-    <form class="d-flex justify-content-center align-items-center" style="margin-top: 200px;" action="../atualizarJ/{{$dado->id}}" method="GET">
+    <form class="d-flex justify-content-center align-items-center" style="margin-top: 200px;" action="../atualizarP/{{$dado->id}}" method="GET">
         <div class="card p-4">
             <div class="row">
                 <div class="col">
@@ -53,7 +53,7 @@
                 <div class="row">
                     <div class="col">
                         <button type="submit" class="btn btn-success"><i class="bi bi-check-all me-1"></i> Atualizar</button>
-                        <a class="btn btn-secondary" href="/consultarPaginaInicialJ"><i class="bi bi-arrow-left-short me-1"></i> Voltar</a>
+                        <a class="btn btn-secondary" href="/consultarPaginaInicialP"><i class="bi bi-arrow-left-short me-1"></i> Voltar</a>
  
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-trash me-1"></i>
@@ -76,7 +76,7 @@
                         <h6>Deseja excluir o dado?: {{$dado->id}}?</h6>
                     </div>
                     <div class="modal-footer">
-                        <a type="button" class="btn btn-success" href="/excluirJ/{{$dado->id}}">Sim</a>
+                        <a type="button" class="btn btn-success" href="/excluirP/{{$dado->id}}">Sim</a>
                         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Não</button>
                     </div>
                 </div>

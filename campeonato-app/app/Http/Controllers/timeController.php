@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class timeController extends Controller
 {
     public function cad(){
-        return view('pages.cadastrarT');
+        return view('pages.time.cadastrarT');
     }//Fim do método para direcionar á página cadastrar time
 
     public function inserir(Request $request){
@@ -26,12 +26,12 @@ class timeController extends Controller
 
     public function consultar(){
         $ids = timeModel::all();
-        return view('pages.consultarT', compact('ids'));
+        return view('pages.time.consultarT', compact('ids'));
     }//Fim do Consultar
 
     public function editar($id){
         $dado = timeModel::findOrFail($id);
-        return view('pages.editarT', compact('dado'));
+        return view('pages.time.editarT', compact('dado'));
     }//Fim do editar
 
     public function atualizar(Request $request, $id){
@@ -44,8 +44,8 @@ class timeController extends Controller
         return redirect('/consultarPaginaInicialT');
     }//Fim do excluir
 
-    public function consultarPaginaInicialT(Request $request, $id){
+    public function consultarPaginaInicialT(){
         $ids = timeModel::all();
-        return view('/consultarPaginaInicialT', compact('ids'));
+        return view('pages.time.consultarT', compact('ids'));
     }//Fim do método
 }//Fim da classe model

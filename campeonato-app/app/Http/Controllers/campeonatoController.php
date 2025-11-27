@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class campeonatoController extends Controller
 {
     public function cad(){
-        return view('pages.cadastrarC');
+        return view('pages.campeonato.cadastrarC');
     }//Fim do método para direcionar á página cadastrar campeonato
 
     public function inserir(Request $request){
@@ -28,12 +28,12 @@ class campeonatoController extends Controller
 
     public function consultar(){
         $ids = campeonatoModel::all();
-        return view('pages.consultarC', compact('ids'));
+        return view('pages.campeonato,consultarC', compact('ids'));
     }//Fim do Consultar
 
     public function editar($id){
         $dado = campeonatoModel::findOrFail($id);
-        return view('pages.editarC', compact('dado'));
+        return view('pages.campeonato.editarC', compact('dado'));
     }//Fim do editar
 
     public function atualizar(Request $request, $id){
@@ -46,8 +46,8 @@ class campeonatoController extends Controller
         return redirect('/consultarPaginaInicialC');
     }//Fim do excluir
 
-    public function consultarPaginaInicialC(Request $request, $id){
+    public function consultarPaginaInicialC(){
         $ids = campeonatoModel::all();
-        return view('/consultarPaginaInicialC', compact('ids'));
+        return view('pages.campeonato.ConsultarC', compact('ids'));
     }//Fim do consultarPaginaInicialC
 }//Fim da classe model

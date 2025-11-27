@@ -51,7 +51,7 @@
             <div class="col">
                 <button type="submit" class="btn btn-success"><i class="bi bi-check-all me-1"></i> Cadastrar</button>
  
-                <a class="btn btn-secondary" type="button" href="/consultarPaginaInicialJ"><i class="bi bi-arrow-left-short me-1"></i> Voltar</a>
+                <a class="btn btn-secondary" type="button" href="/consultarPaginaInicialP"><i class="bi bi-arrow-left-short me-1"></i> Voltar</a>
             </div>
         </div>
     </form>

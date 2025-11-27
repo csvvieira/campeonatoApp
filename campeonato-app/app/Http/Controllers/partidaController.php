@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class partidaController extends Controller
 {
     public function cad(){
-        return view('pages.cadastrarP');
+        return view('pages.partida.cadastrarP');
     }//Fim do método para direcionar á página cadastrar partida
 
     public function inserir(Request $request){
@@ -36,12 +36,12 @@ class partidaController extends Controller
 
     public function consultar(){
         $ids = partidaModel::all();
-        return view('pages.consultarP', compact('ids'));
+        return view('pages.partida.consultarP', compact('ids'));
     }//Fim do Consultar
 
     public function editar($id){
         $dado = partidaModel::findOrFail($id);
-        return view('pages.editarP', compact('dado'));
+        return view('pages.partida.editarP', compact('dado'));
     }//Fim do editar
 
     public function atualizar(Request $request, $id){
@@ -54,8 +54,8 @@ class partidaController extends Controller
         return redirect('/consultarPaginaInicialP');
     }//Fim do excluir
     
-    public function consultarPaginaInicialP(Request $request, $id){
+    public function consultarPaginaInicialP(){
         $ids = partidaModel::all();
-        return view('/consultarPaginaInicialP', compact('ids'));
+        return view('pages.partida.consultarP', compact('ids'));
     }//Fim do método
 }//Fim da classe model
