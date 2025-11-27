@@ -53,4 +53,9 @@ class jogadorController extends Controller
         jogadorModel::where('id', $id)->delete($request->all());
         return redirect('/consultarPaginaInicialJ');
     }//Fim do excluir
-}//Fim da classe model
+
+    public function consultarPaginaInicialJ(Request $request, $id){
+        $ids = jogadorModel::all();
+        return view('/consultarPaginaInicialJ', compact('ids'));
+    }//Fim do método
+}//Fim da classe Model
